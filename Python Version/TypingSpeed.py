@@ -47,27 +47,31 @@ def result():
 	file = open('results.html', 'w')
 	file.truncate()
 
-	file.write('<!DOCTYPE html> <html> <head> <style>body {max-width: 1100px; margin-left: auto;margin-right: auto;margin: 0 auto;font-family: arial;background-color: #f2f2f2;}#box {text-align: left;min-width: 350px;font-weight: bold;color: #4d94ff;background-color: #cccccc;border-collapse: collapse;position: relative;left: 385px;top: 90px;border-radius: 0.5em;}#text {text-align: center;color: #595959;}</style><body><h3 id ="text">Python Type-Speed Tester by Areeb Beigh</h3><h3 id="text"><a style="color:#595959"href="http://www.areeb-beigh.tk" target="_blank">www.areeb-beigh.tk</a></h3><table id="box" cellpadding="12"" width="25%"><tr><td>Right words:</td><td>\n')
-	file.write(str(right) + '\n')
-	file.write('</td></tr><tr><td>\n')
-	file.write('Wrong words:\n')
-	file.write('</td><td>\n')
-	file.write(str(wrong) + '\n')
-	file.write('</td></tr><tr><td>\n')
-	file.write('Accuracy:\n')
-	file.write('</td><td>\n')
-	file.write(str(round(accuracy,2)) + '%\n')
-	file.write('</td></tr><tr><td>\n')
-	file.write('Typing speed:\n')
-	file.write('</td><td>\n')
-	file.write(str(speed) + ' WPM\n')
-	file.write('</td></tr><tr><td>\n')
-	file.write('Keystrokes entered:\n')
-	file.write('</td><td>\n')
-	file.write(str(key_strokes) + '\n')
-	file.write('</td><td></table>\n')
-	file.write('<font style="position:relative;top:200px;left:450px;">File created: ' + str(time.strftime("%c")) + '</font>' + '\n')
-	file.write('</body></html>')
+	file.write('''
+	<!DOCTYPE html> <html> <head> 
+	<style>
+	body {max-width: 1100px; margin-left: auto;margin-right: auto;margin: 0 auto;font-family: arial;background-color: #f2f2f2;}
+	#box {text-align: left;min-width: 350px;font-weight: bold;color: #4d94ff;background-color: #cccccc;
+	border-collapse: collapse;position: relative;left: 385px;top: 90px;border-radius: 0.5em;}
+	#text {text-align: center;color: #595959;}
+	</style>
+	<body>
+	<h3 id ="text">Python Type-Speed Tester by Areeb Beigh</h3>
+	<h3 id="text"><a style="color:#595959"href="http://www.areeb-beigh.tk" target="_blank">www.areeb-beigh.tk</a></h3>
+	<table id="box" cellpadding="12"" width="25%%">
+	<tr><td>Right words:</td>
+	<td>%s</td></tr>
+	<tr><td>Wrong words:</td>
+	<td>%s</td></tr>
+	<tr><td>Accuracy:</td>
+	<td>%s%%</td></tr>
+	<tr><td>Typing speed:</td>
+	<td>%s WPM</td></tr>
+	<tr><td>Keystrokes entered:</td>
+	<td>%s</td>
+	</table>
+	<font style="position:relative;top:200px;left:450px;">File created: %s</font>
+	</body></html>''' % (str(right), str(wrong), str(round(accuracy,2)), str(speed), str(key_strokes), str(time.strftime("%c"))))
 	
 	file.close()
 	
