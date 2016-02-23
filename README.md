@@ -16,7 +16,7 @@
 		<p>If you're getting some errors such as <i>"Blabla.dll file is missing from your computer"</i> then make sure you have your windows system
 		files installed correctly also make sure that you download the file from the correct location. An up to date link to the respository will always
 		be available on my website <a href="http://www.areeb-beigh.tk/my_works/python" target="_blank">here.</a></p>
-		<p>If by any chance the above link is broken you can also get the download from my GitHub profile <a href="https://github.com/M4Shooter" target="_blank">here.</a></p>
+		<p>If by any chance the above link is broken you can also get the download from my GitHub profile <a href="https://github.com/areeb-beigh" target="_blank">here.</a></p>
 		<h3>2. Spellings</h3>
 		<p>Since there are over 1800 words in the program I couldn't check all of them. So if you find any miss spelled word in the program please inform me through 
 		any of the contacts <a href="http://areeb-beigh.tk/contact.html" target="_blank">here.</a>
@@ -35,9 +35,9 @@
 		</p>
 		<hr>
 		<h2>Other stuff</h2>
-		<p>Thanks to Emil Bajrovski (n00b slow a$$) for beta testing on Windows 8 and pointing out a bug.</p>
+		<p>Thanks to Emil Bajrovski for beta testing on Windows 8 and pointing out a bug.</p>
 		<hr>
-		<b>Developer</b>: Areeb Beigh (M4Shooter)<br>
+		<b>Developer</b>: Areeb Beigh<br>
 		<b>Website</b>: <a href="http://www.areeb-beigh.tk/" id="except" target="_blank">www.areeb-beigh.tk</a><br>
 		<b>Mail</b>: areebbeigh@gmail.com<br>
 		<b>Version</b>: 1.0<br>
