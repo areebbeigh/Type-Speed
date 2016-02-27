@@ -81,7 +81,7 @@ def result():
 # Start the typing speed test
 def start():
 	startTime = time.time() # The starting time - we'll need this later
-	timer = Timer(10.0, result) # 120 seconds timer
+	timer = Timer(120.0, result) # 120 seconds timer
 	timer.start()
 	global inputs
 	inputs = 0.0
