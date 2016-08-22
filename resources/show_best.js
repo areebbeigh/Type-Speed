@@ -32,8 +32,6 @@ var showBest = function(id) {
 };
 
 var showBestAll = function() {
-     showBest("#accuracy");
-     showBest("#speed");
-     showBest("#right");
-     showBest("#wrong");
+    elements = ["#accuracy", "#speed", "#right", "#wrong"]
+    elements.forEach(showBest)
 }
