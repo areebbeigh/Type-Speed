@@ -8,7 +8,9 @@ import sqlite3
 import webbrowser
 from datetime import datetime
 
-DB_PATH = os.path.abspath(os.path.join('database', 'typespeed_data.db'))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.abspath(os.path.join(BASE_DIR, 'database', 'typespeed_data.db'))
+HTML_FILE = os.path.join(BASE_DIR, "records.html")
 TABLE_NAME = "TYPESPEED_RECORDS"
 
 
@@ -138,7 +140,7 @@ class ManageDB:
         <input id="showButton" type="button" onclick="showBestAll()" value="Show Best">
         </div></body></html>"""
 
-        with open("records.html", "w") as f:
+        with open(HTML_FILE, "w") as f:
             f.write(html)
 
-        webbrowser.open("records.html")
+        webbrowser.open(HTML_FILE)
