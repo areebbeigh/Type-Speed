@@ -1,5 +1,5 @@
 // Author: Areeb Beigh <areebbeigh@gmail.com>
-// Not the best of scripts in JS but this does the thing
+// Not the best of scripts in JS but this gets the job done
 
 var showBest = function(id) {
     var nodes = document.querySelectorAll(id);
