@@ -1,5 +1,5 @@
 # Author: Areeb Beigh <areebbeigh@gmail.com>
-# github.com/areeb-beigh
+# github.com/areebbeigh
 
 """
 TypeSpeed is a simple program that measures your typing speed and keeps
@@ -24,7 +24,7 @@ ended = False
 def main():
     """ Displays available menu options """
 
-    print("     Type Speed by Areeb - github.io/areeb-beigh")
+    print("     Type Speed by Areeb - github.com/areebbeigh")
     print("\n")
     print("     1. Play")
     print("     2. View records")

@@ -103,7 +103,7 @@ class ManageDB:
 <body>
     <div id="wrapper">
         <h1>Type Speed Records</h1>
-        <h2><a href="https://github.io/areeb-beigh">github.io/areeb-beigh</a></h2>
+        <h2><a href="https://github.com/areebbeigh">github.com/areebbeigh</a></h2>
         <div id="box">
             <table width="30%" border="0" cellpadding="10px" cellspacing="0px">
                 <tr>
