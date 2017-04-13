@@ -21,7 +21,7 @@ var showBest = function(id) {
     }
     else {
         // the best entry in wrong is the one that is the minimum
-        var smallestValue = 9999999999999999;
+        var smallestValue = nodeValues[0];
         for (var i = 0; i < nodeValues.length; i++) {
             if (nodeValues[i] < smallestValue)
                 smallestValue = nodeValues[i];
